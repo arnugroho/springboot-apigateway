@@ -51,6 +51,7 @@
 
     <modules>
         <module>apigateway-service</module>
+        <module>hello-service</module>
     </modules>
 
 
