@@ -17,8 +17,9 @@ public class ApiGatewayService {
         return builder.routes()
                 .route(p -> p
                         .path("/hello")
-                        //.filters(f -> f.addRequestHeader("Hello", "World"))
+                        .filters(f -> f.addRequestHeader("Hello", "World"))
                         .uri("http://localhost:1414"))
                 .build();
     }
+
 }
